@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./css/styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="login-container">
+      <h1>Login</h1>
+      <form action="">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-email" autocomplete="off" />
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha" />
+        <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+        <input type="submit" value="Login" />
+      </form>
+      <div id="social-container">
+        <p>Ou entre pelas suas redes sociais</p>
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <div id="register-container">
+        <p>Ainda não tem uma conta?</p>
+        <a href="#">Registrar</a>
+      </div>
     </div>
+
   );
 }
 
